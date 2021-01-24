@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+
+.container {
+  max-width: 920px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* buttons */
+.button {
+  background: #72676b;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-primary {
+  background: #f1356d;
+}
+
+/* search form */
+.search form {
+  display: grid;
+  grid-template-columns: auto auto min-content min-content;
+  gap: 8px;
+}
+
+@media screen and (max-width: 680px) {
+  .search form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 480px) {
+  .search form {
+    grid-template-columns: 1fr;
+  }
+}
+
+label {
+  text-align: left;
+  display: block;
+}
+
+input, select {
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+/* Image grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.image-grid-item {
+  width: 100%;
+}
+
+/* Image */
+.image-container {
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  background-color: white;
+  padding: 4px;
+  left: 50%;
+  width: min-content;
+}
+
+.place-top {
+  top: 8px;
+}
+
+.place-bottom {
+  bottom: 8px;
+}
