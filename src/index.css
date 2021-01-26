@@ -39,7 +39,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 520px) {
   .search form {
     grid-template-columns: 1fr;
   }
@@ -65,7 +65,7 @@ input, select {
   grid-column-gap: 10px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 520px) {
   .image-grid {
     grid-template-columns: 1fr;
   }
